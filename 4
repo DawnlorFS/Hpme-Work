@@ -1,0 +1,17 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+	setlocale(LC_ALL, "Russian");
+	double gkorm;
+	cout << "Растчет закупки корма для хомячка\nСколько грамм корма потрябляет хомячок в сутки?\n";
+	cin >> gkorm;
+	cout << "===============================================\n";
+	double kgkorm = gkorm * 0.001 * 30;
+	cout << "На 30 дней хомячку потребуется   " << kgkorm << "Кг корма|\n";
+	cout << "===============================================\n";
+
+return 0;
+}
