@@ -1,0 +1,18 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+	setlocale(LC_ALL, "Russian");
+	int diagonal;
+	cout << "Введите диагональ телевизора\n";
+	cin >> diagonal;
+	cout << "====================================================\n";
+	double si = diagonal * 2.54;
+	int any = int(si * 10)%10;
+	cout << "Диагональ телевизрора в санитметрах равна  " << ((any >= 5) ? int(si + 1) : int(si)) << "см |\n";
+	cout << "====================================================\n";
+
+	return 0;
+}
